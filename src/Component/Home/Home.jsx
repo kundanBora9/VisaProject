@@ -79,7 +79,7 @@ function Home() {
     <>
       {/* carousel */}
 
-      <div className="h-96 w-screen md:h-96 lg:h-screen xl:h-screen 2xl:h-96 overflow-hidden"> {/* Removed overflow-x-hidden and snap-x */}
+      <div className="h-96 w-full md:h-96 lg:h-screen xl:h-screen 2xl:h-96 overflow-hidden"> {/* w-full instead of w-screen */}
   <Carousel
     onSlideChange={(index) => console.log("")}
     className="carousel-button"
@@ -101,7 +101,7 @@ function Home() {
           "absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-3",
       },
       item: {
-        base: "flex items-center justify-center h-full", 
+        base: "flex items-center justify-center h-full",
         wrapper: {
           off: "w-full flex-shrink-0 transform cursor-default snap-center",
           on: "w-full flex-shrink-0 transform cursor-grab snap-center",
@@ -110,20 +110,20 @@ function Home() {
       img: {
         width: "100%",
         height: "100%",
-        objectFit: "cover", // Maintain aspect ratio while covering the area
+        objectFit: "cover",
       },
       control: {
         base: "inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#252B91]/30 group-hover:bg-[#252B91] group-focus:outline-none group-focus:ring-4 group-focus:ring-[#252B91] dark:bg-[#252B91]/30 dark:group-hover:bg-[#252B91]/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
         icon: "h-5 w-5 text-white dark:bg-[#252B91] sm:h-6 sm:w-6",
       },
       scrollContainer: {
-        base: "flex h-full snap-mandatory overflow-hidden snap-x scroll-smooth rounded-none",
+        base: "flex h-full snap-mandatory overflow-hidden snap-x scroll-smooth rounded-none", 
         snap: "snap-x",
       },
     }}
   >
     {/* Slide 1 */}
-    <div className="relative w-full h-full flex items-center justify-center overflow-hidden"> {/* Center and ensure overflow is hidden */}
+    <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
       <img
         src={CarouselImg1}
         alt="Slide 1"
@@ -148,7 +148,7 @@ function Home() {
     </div>
 
     {/* Slide 2 */}
-    <div className="relative w-full h-full flex items-center justify-center overflow-hidden"> {/* Center and ensure overflow is hidden */}
+    <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
       <img
         src={CarouselImg2}
         alt="Slide 2"
@@ -173,6 +173,7 @@ function Home() {
     </div>
   </Carousel>
 </div>
+
   
 
 
@@ -976,7 +977,7 @@ function Home() {
             saepe in ab? Repellat
           </p>
         </div>
-        <Swiper {...swiperParams}>
+        <Swiper {...swiperParams} className="mt-20 mb-10">
     <SwiperSlide>
       <div className="item testimonial-item p-3 md:p-3 lg:p-0">
             <div className="p-4 mb-5 bg-slate-100 rounded-xl">
