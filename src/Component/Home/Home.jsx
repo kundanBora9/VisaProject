@@ -79,100 +79,103 @@ function Home() {
     <>
       {/* carousel */}
 
-      <div className="h-96 w-screen md:h-96 md:w-full lg:h-full lg:w-full   xl:h-screen xl:w-screen 2xl:h-96">
-        <Carousel
-          onSlideChange={(index) => console.log("")}
-          className="carousel-button"
-          theme={{
-            root: {
-              base: "relative h-full w-full",
-              leftControl:
-                "absolute left-0 top-0 flex h-full items-center justify-center px-4 focus:outline-none",
-              rightControl:
-                "absolute right-0 top-0 flex h-full items-center justify-center px-4 focus:outline-none",
-            },
-            indicators: {
-              active: {
-                off: "bg-[#252B91] hover:bg-[#252B91] dark:bg-[#252B91] dark:bg-[#252B91]",
-                on: "bg-[#252B91] dark:bg-[#252B91]",
-              },
-              base: "h-3 w-3 rounded-full",
-              wrapper:
-                "absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-3",
-            },
-            item: {
-              base: "absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2",
-              wrapper: {
-                off: "w-full flex-shrink-0 transform cursor-default snap-center",
-                on: "w-full flex-shrink-0 transform cursor-grab snap-center",
-              },
-            },
-            img: {
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            },
-            control: {
-              base: "inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#252B91]/30 group-hover:bg-[#252B91] group-focus:outline-none group-focus:ring-4 group-focus:ring-[#252B91] dark:bg-[#252B91]/30 dark:group-hover:bg-[#252B91]/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
-              icon: "h-5 w-5 text-white dark:bg-[#252B91] sm:h-6 sm:w-6",
-            },
-            scrollContainer: {
-              base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-lg",
-              snap: "snap-x",
-            },
-          }}
-        >
-          {/* Slide 1 */}
-          <div className="flex h-full items-center justify-center relative">
-            <img
-              src={CarouselImg1}
-              alt="Slide 1"
-              className="brightness-50 w-full h-full object-cover object-center"
-            />
-            <div className="absolute text-center md:text-lg lg:text-xl">
-              <span className="poppins-medium text-white text-md mb-3 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl">
-                Solution for all types of visa
-              </span>
-              <h1 className="poppins-medium text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl">
-                Immigration Process <br /> Starts Here!
-              </h1>
-              <p className="poppins-regular text-white   md:text-lg lg:text-xl xl:text-2xl w-11/12 md:w-3/4 lg:w-3/4 xl:w-3/4 text-center mx-auto mt-3">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <button className="bg-[#4CAF50] hover:bg-[#303F9F] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-white poppins-regular rounded-full mt-4">
-                More Details
-              </button>
-            </div>
-          </div>
-
-          {/* Slide 2 */}
-          <div className="flex h-full items-center justify-center relative">
-            <img
-              src={CarouselImg2}
-              alt="Slide 2"
-              className="brightness-50 w-full h-full object-cover object-center"
-            />
-            <div className="absolute text-center">
-              <span className="poppins-medium text-white text-md mb-3 sm:text-lg md:text-2xl lg:text-4xl xl:text-4xl">
-                Solution for all types of visa
-              </span>
-              <h1 className="poppins-medium text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl">
-                Best Visa <br /> Immigration Services
-              </h1>
-              <p className="poppins-regular text-white   md:text-lg lg:text-xl xl:text-2xl w-11/12 md:w-3/4 lg:w-3/4 xl:w-3/4 text-center mx-auto mt-3">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <button className="bg-[#4CAF50] hover:bg-[#303F9F] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-white poppins-regular rounded-full mt-4">
-                More Details
-              </button>
-            </div>
-          </div>
-        </Carousel>
+      <div className="h-96 w-screen md:h-96 lg:h-screen xl:h-screen 2xl:h-96 overflow-hidden"> {/* Removed overflow-x-hidden and snap-x */}
+  <Carousel
+    onSlideChange={(index) => console.log("")}
+    className="carousel-button"
+    theme={{
+      root: {
+        base: "relative h-full w-full",
+        leftControl:
+          "absolute left-0 top-0 flex h-full items-center justify-center px-4 focus:outline-none",
+        rightControl:
+          "absolute right-0 top-0 flex h-full items-center justify-center px-6 focus:outline-none",
+      },
+      indicators: {
+        active: {
+          off: "bg-[#252B91] hover:bg-[#252B91] dark:bg-[#252B91]",
+          on: "bg-[#252B91] dark:bg-[#252B91]",
+        },
+        base: "h-3 w-3 rounded-full",
+        wrapper:
+          "absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-3",
+      },
+      item: {
+        base: "flex items-center justify-center h-full", 
+        wrapper: {
+          off: "w-full flex-shrink-0 transform cursor-default snap-center",
+          on: "w-full flex-shrink-0 transform cursor-grab snap-center",
+        },
+      },
+      img: {
+        width: "100%",
+        height: "100%",
+        objectFit: "cover", // Maintain aspect ratio while covering the area
+      },
+      control: {
+        base: "inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#252B91]/30 group-hover:bg-[#252B91] group-focus:outline-none group-focus:ring-4 group-focus:ring-[#252B91] dark:bg-[#252B91]/30 dark:group-hover:bg-[#252B91]/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
+        icon: "h-5 w-5 text-white dark:bg-[#252B91] sm:h-6 sm:w-6",
+      },
+      scrollContainer: {
+        base: "flex h-full snap-mandatory overflow-hidden snap-x scroll-smooth rounded-none",
+        snap: "snap-x",
+      },
+    }}
+  >
+    {/* Slide 1 */}
+    <div className="relative w-full h-full flex items-center justify-center overflow-hidden"> {/* Center and ensure overflow is hidden */}
+      <img
+        src={CarouselImg1}
+        alt="Slide 1"
+        className="brightness-50 w-full h-full object-cover"
+      />
+      <div className="absolute text-center md:text-lg lg:text-xl">
+        <span className="poppins-medium text-white text-md mb-3 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl">
+          Solution for all types of visa
+        </span>
+        <h1 className="poppins-medium text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl">
+          Immigration Process <br /> Starts Here!
+        </h1>
+        <p className="poppins-regular text-white md:text-lg lg:text-xl xl:text-2xl w-11/12 md:w-3/4 lg:w-3/4 xl:w-3/4 text-center mx-auto mt-3">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy
+          text ever since the 1500s.
+        </p>
+        <button className="bg-[#4CAF50] hover:bg-[#303F9F] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-white poppins-regular rounded-full mt-4">
+          More Details
+        </button>
       </div>
+    </div>
+
+    {/* Slide 2 */}
+    <div className="relative w-full h-full flex items-center justify-center overflow-hidden"> {/* Center and ensure overflow is hidden */}
+      <img
+        src={CarouselImg2}
+        alt="Slide 2"
+        className="brightness-50 w-full h-full object-cover"
+      />
+      <div className="absolute text-center">
+        <span className="poppins-medium text-white text-md mb-3 sm:text-lg md:text-2xl lg:text-4xl xl:text-4xl">
+          Solution for all types of visa
+        </span>
+        <h1 className="poppins-medium text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl">
+          Best Visa <br /> Immigration Services
+        </h1>
+        <p className="poppins-regular text-white md:text-lg lg:text-xl xl:text-2xl w-11/12 md:w-3/4 lg:w-3/4 xl:w-3/4 text-center mx-auto mt-3">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy
+          text ever since the 1500s.
+        </p>
+        <button className="bg-[#4CAF50] hover:bg-[#303F9F] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-white poppins-regular rounded-full mt-4">
+          More Details
+        </button>
+      </div>
+    </div>
+  </Carousel>
+</div>
+  
+
+
 
       {/* About the company */}
 
@@ -275,121 +278,6 @@ function Home() {
 
       {/* second About */}
 
-      {/* <div className=" sec-about h-screen flex justify-center items-center mt-20">
-        <div className="flex justify-between items-center gap-10 z-10 flex-wrap ">
-          <div className="flex items-center justify-center min-h-screen">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-48 h-48 flex flex-col items-center justify-center">
-                <div
-                  className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-              bg-[#003A66] rounded-t-lg w-48 h-24 flex items-center justify-center"
-                >
-                  <div className=" flex items-center justify-center">
-                    <FontAwesomeIcon
-                      icon={faPassport}
-                      className="text-[#4CAF50] text-6xl counter-icon"
-                    />
-                  </div>
-                </div>
-                <div className="mt-20 text-center">
-                  <p className="text-[#003A66] font-bold uppercase poppins-regular">
-                    VISA CATEGORIES
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#4CAF50] text-3xl font-bold counter-value">
-                      <CounterUp end={31} duration={5000} />
-                    </p>
-                    <p className="text-[#4CAF50] text-3xl font-bold counter-value">
-                      +
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center justify-center min-h-screen">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-48 h-48 flex flex-col items-center justify-center">
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#003A66] rounded-t-lg w-48 h-24 flex items-center justify-center">
-                  <div className=" flex items-center justify-center">
-                    <FontAwesomeIcon
-                      icon={faUsers}
-                      className="text-[#4CAF50] text-6xl counter-icon"
-                    />
-                  </div>
-                </div>
-                <div className="mt-20 text-center">
-                  <p className="text-[#003A66] font-bold uppercase poppins-regular">
-                    Team Members
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#4CAF50] text-3xl font-bold counter-value">
-                      <CounterUp end={377} duration={5000} />
-                    </p>
-                    <p className="text-[#4CAF50] text-3xl font-bold counter-value">
-                      +
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center justify-center min-h-screen">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-48 h-48 flex flex-col items-center justify-center">
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#003A66] rounded-t-lg w-48 h-24 flex items-center justify-center">
-                  <div className=" flex items-center justify-center">
-                    <FontAwesomeIcon
-                      icon={faUserCheck}
-                      className="text-[#4CAF50] text-6xl counter-icon"
-                    />
-                  </div>
-                </div>
-                <div className="mt-20 text-center">
-                  <p className="text-[#003A66] font-bold uppercase poppins-regular">
-                    Visa Process
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#4CAF50] text-3xl font-bold counter-value">
-                      <CounterUp end={4.9} duration={5000} />
-                    </p>
-                    <p className="text-[#4CAF50] text-3xl font-bold counter-value">
-                      K
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center justify-center min-h-screen">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-48 h-48 flex flex-col items-center justify-center">
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#003A66] rounded-t-lg w-48 h-24 flex items-center justify-center">
-                  <div className=" flex items-center justify-center">
-                    <FontAwesomeIcon
-                      icon={faHandshake}
-                      className="text-[#4CAF50] text-6xl counter-icon"
-                    />
-                  </div>
-                </div>
-                <div className="mt-20 text-center">
-                  <p className="text-[#003A66] uppercase font-bold poppins-regular">
-                    Success Rates
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#4CAF50] text-3xl font-bold counter-value">
-                      <CounterUp end={98} duration={5000} />
-                    </p>
-                    <p className="text-[#4CAF50] text-3xl font-bold counter-value">
-                      %
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div className="sec-about min-h-screen flex justify-center items-center lg:mt-20 mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-5 md:gap-20 z-0 w-full px-4">
@@ -1069,129 +957,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* testimonial */}
-      {/* <section className="mt-24">
-        <div className="container mx-auto">
-          <div className="text-center">
-            <span className="uppercase text-[#003A66] poppins-medium text-xl">
-              OUR CLIENTS RIVIEWS
-            </span>
-            <h2 className=" poppins-semibold text-[#003A66] text-6xl text-center">
-              What Our Clients Say
-            </h2>
-            <p className=" mx-auto w-3/4 mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              deleniti amet at atque sequi quibusdam cumque itaque repudiandae
-              temporibus, eius nam mollitia voluptas maxime veniam
-              necessitatibus saepe in ab? Repellat
-            </p>
-          </div>
-        </div>
-        <div className="container-fluid testimonial overflow-hidden pb-5">
-          <div className="container py-5">
-            <div className="gap-5 flex justify-end items-end mb-3 text-[#003A66] mx-20">
-            <FontAwesomeIcon icon={faArrowLeftLong}  className="text-4xl" />
-            <FontAwesomeIcon icon={faArrowRightLong}   className="text-4xl" />
-           
-            </div>
-            <div className="flex justify-center items-center gap-5">
-              <div className="testimonial-item">
-                <div className="p-4 mb-5 bg-slate-100 rounded-xl border border-red-500 w-full">
-                  <p className="text-lg mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitati
-                    eiusmod tempor incididunt.
-                  </p>
-                  <div className="flex justify-end">
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className="rounded-full w-24 h-24 me-4">
-                    <img
-                      className="rounded-full"
-                      src={testimonial1}
-                      alt="img"
-                    />
-                  </div>
-                  <div className="my-auto">
-                    <h5>Person Name</h5>
-                    <p className="mb-0">Profession</p>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial-item">
-                <div className="p-4 mb-5 bg-slate-100 rounded-xl">
-                  <p className="text-lg mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitati
-                    eiusmod tempor incididunt.
-                  </p>
-                  <div className="flex justify-end">
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className="rounded-full w-24 h-24 me-4">
-                    <img
-                      className="rounded-full"
-                      src={testimonial2}
-                      alt="img"
-                    />
-                  </div>
-                  <div className="my-auto">
-                    <h5>Person Name</h5>
-                    <p className="mb-0">Profession</p>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial-item">
-                <div className="p-4 mb-5 bg-slate-100 rounded-xl">
-                  <p className="text-lg mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitati
-                    eiusmod tempor incididunt.
-                  </p>
-                  <div className="flex justify-end">
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                    <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className="rounded-full w-24 h-24 me-4">
-                    <img
-                      className="rounded-full"
-                      src={testimonial3}
-                      alt="img"
-                    />
-                  </div>
-                  <div className="my-auto">
-                    <h5>Person Name</h5>
-                    <p className="mb-0">Profession</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-
 
 
       {/* Owl carousel */}
