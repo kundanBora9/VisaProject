@@ -1,8 +1,11 @@
 import React from "react";
-import CounterUp from "./Counter.jsx";
-import  OwlCarousel  from 'react-owl-carousel';
 import "../../App.css";
 import { Carousel } from "flowbite-react";
+import CounterUp from "./Counter.jsx";
+import { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css'; // Import Swiper styles
+import 'swiper/css/navigation';
 import { Button, Card } from "flowbite-react";
 import CarouselImg1 from "../../assets/carousel-1.jpg";
 import CarouselImg2 from "../../assets/carousel-2.jpg";
@@ -52,30 +55,26 @@ import { faCcVisa } from "@fortawesome/free-brands-svg-icons";
 
 
 function Home() {
-  const options = {
-    responsive: {
-      0: {
-        items: 1,
+  const swiperParams = {
+    spaceBetween: 30,
+    speed: 1000, // Enable navigation buttons
+    modules: [], // Adjust the spacing between slides
+    breakpoints: {
+      320: {
+        slidesPerView: 1,  // Mobile: 1 slide per view
+        spaceBetween: 10,  // Less space between slides
       },
-      400: {
-        items: 1,
+      640: {
+        slidesPerView: 2,  // Tablet: 2 slides per view
+        spaceBetween: 20,
       },
-      600: {
-        items: 1,
-      },
-      700: {
-        items: 1,
-      },
-      800: {
-        items: 2,
-      },
-      1000: {
-        items: 2,
+      1024: {
+        slidesPerView: 2,  // Desktop: 3 slides per view
+        spaceBetween: 30,
       },
     },
-    nav: true,
-    dots: true,
   };
+  const swiperRef = useRef(null); 
   return (
     <>
       {/* carousel */}
@@ -1192,6 +1191,9 @@ function Home() {
         </div>
       </section> */}
 
+
+
+
       {/* Owl carousel */}
 
       <div className="container mx-auto mt-24">
@@ -1209,15 +1211,9 @@ function Home() {
             saepe in ab? Repellat
           </p>
         </div>
-        <OwlCarousel
-          className="owl-theme section mt-5"
-          loop
-          margin={20}
-          autoplay
-          {...options}
-        >
-          {/* 1 */}
-          <div className="testimonial-item p-3 md:p-3 lg:p-0">
+        <Swiper {...swiperParams}>
+    <SwiperSlide>
+      <div className="item testimonial-item p-3 md:p-3 lg:p-0">
             <div className="p-4 mb-5 bg-slate-100 rounded-xl">
               <p className="text-lg mb-0 poppins-regular text-black">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -1243,9 +1239,9 @@ function Home() {
               </div>
             </div>
           </div>
-
-          {/* 2 */}
-          <div className="testimonial-item p-3 md:p-3 lg:p-0">
+          </SwiperSlide>
+    <SwiperSlide>
+      <div className=" item testimonial-item p-3 md:p-3 lg:p-0">
             <div className="p-4 mb-5 bg-slate-100 rounded-xl   w-full">
               <p className="text-lg mb-0 poppins-regular text-black">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -1271,9 +1267,9 @@ function Home() {
               </div>
             </div>
           </div>
-
-          {/* 3 */}
-          <div className="testimonial-item p-3 md:p-3 lg:p-0">
+          </SwiperSlide>
+    <SwiperSlide>
+      <div className=" item testimonial-item p-3 md:p-3 lg:p-0">
             <div className="p-4 mb-5 bg-slate-100 rounded-xl">
               <p className="text-lg mb-0 poppins-regular text-black">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -1298,8 +1294,12 @@ function Home() {
                 <p className="mb-0">Profession</p>
               </div>
             </div>
-          </div>
-        </OwlCarousel>
+          </div></SwiperSlide>
+  </Swiper>
+  <div className="swiper-buttons">
+        <button onClick={() => swiperRef.current.swiper.slidePrev()}>Previous</button>
+        <button onClick={() => swiperRef.current.swiper.slideNext()}>Next</button>
+      </div>
       </div>
 
       {/* Traning */}
