@@ -1,0 +1,130 @@
+import React, { useState } from 'react';
+
+function ContactForm() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [project, setProject] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState({});
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const errorMessages = {};
+
+    if (name.trim() === '') {
+      errorMessages.name = 'Name is required';
+    }
+    if (email.trim() === '' || !email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+      errorMessages.email = 'Invalid email address';
+    }
+    if (phone.trim() === '') {
+      errorMessages.phone = 'Phone number is required';
+    }
+    if (project.trim() === '') {
+      errorMessages.project = 'Project name is required';
+    }
+    if (subject.trim() === '') {
+      errorMessages.subject = 'Subject is required';
+    }
+    if (message.trim() === '') {
+      errorMessages.message = 'Message is required';
+    }
+
+    if (Object.keys(errorMessages).length > 0) {
+      setErrors(errorMessages);
+    } else {
+      // Submit the form
+      console.log('Form submitted successfully!');
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
+        <div className="form-floating">
+          <input
+            type="text"
+            className="form-input rounded-md h-14 w-64"
+            id="name"
+            placeholder="Your Name"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+          />
+          <label htmlFor="name"></label>
+          {errors.name && <div className="text-red-500">{errors.name}</div>}
+        </div>
+        <div className="form-floating">
+          <input
+            type="email"
+            className="form-input rounded-md h-14 w-64"
+            id="email"
+            placeholder="Your Email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+          />
+          <label htmlFor="email"></label>
+          {errors.email && <div className="text-red-500">{errors.email}</div>}
+        </div>
+        <div className="form-floating">
+          <input
+            type="tel"
+            className="form-input rounded-md h-14 w-64"
+            id="phone"
+            placeholder="Phone"
+            value={phone}
+            onChange={(event) => setPhone(event.target.value)}
+          />
+          <label htmlFor="phone"></label>
+          {errors.phone && <div className="text-red-500">{errors.phone}</div>}
+        </div>
+        <div className="form-floating">
+          <input
+            type="text"
+            className="form-input rounded-md h-14 w-64"
+            id="project"
+            placeholder="Project"
+            value={project}
+            onChange={(event) => setProject(event.target.value)}
+          />
+          <label htmlFor="project"></label>
+          {errors.project && <div className="text-red-500">{errors.project}</div>}
+        </div>
+        <div className="col-span-2 form-floating">
+          <input
+            type="text"
+            className="form-input rounded-md h-14 w-full"
+            id="subject"
+            placeholder="Subject"
+            value={subject}
+            onChange={(event) => setSubject(event.target.value)}
+          />
+          <label htmlFor="subject"></label>
+          {errors.subject && <div className="text-red-500">{errors.subject}</div>}
+        </div>
+        <div className="col-span-2 form-floating">
+          <textarea
+            className="form-input h-40 rounded-md w-full"
+            id="message"
+            placeholder="Leave a message here"
+            value={message}
+            onChange={(event) => setMessage(event.target.value)}
+          />
+          <label htmlFor="message"></label>
+          {errors.message && <div className="text-red-500">{errors.message}</div>}
+        </div>
+      </div>
+      <button type="submit" className="border border-[#003A66] bg-[#E02454] text-white poppins-regular rounded-md w-full py-3 mt-5">
+        Send Message
+      </button>
+    </form>
+  );
+}{
+      // Submit the form
+      setSuccessMessage('Form submitted successfully!');
+      // You can also add a timeout to hide the message after a few seconds
+      setTimeout(() => {
+        setSuccessMessage('');
+      }, 3000);
+    }
