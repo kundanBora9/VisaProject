@@ -47,7 +47,8 @@ import { faUserCheck } from "@fortawesome/free-solid-svg-icons";
 import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 import { faCcVisa } from "@fortawesome/free-brands-svg-icons";
 import CounterUp from "./Counter.jsx";
-import OwlCarousel from "react-owl-carousel";
+import { OwlCarousel } from 'react-owl-carousel';
+
 
 function Home() {
   const options = {
