@@ -1,4 +1,6 @@
 import React from "react";
+import CounterUp from "./Counter.jsx";
+import  OwlCarousel  from 'react-owl-carousel';
 import "../../App.css";
 import { Carousel } from "flowbite-react";
 import { Button, Card } from "flowbite-react";
@@ -46,8 +48,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faUserCheck } from "@fortawesome/free-solid-svg-icons";
 import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 import { faCcVisa } from "@fortawesome/free-brands-svg-icons";
-import CounterUp from "./Counter.jsx";
-import { OwlCarousel } from 'react-owl-carousel';
+
 
 
 function Home() {
