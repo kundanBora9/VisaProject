@@ -1296,10 +1296,6 @@ function Home() {
             </div>
           </div></SwiperSlide>
   </Swiper>
-  <div className="swiper-buttons">
-        <button onClick={() => swiperRef.current.swiper.slidePrev()}>Previous</button>
-        <button onClick={() => swiperRef.current.swiper.slideNext()}>Next</button>
-      </div>
       </div>
 
       {/* Traning */}

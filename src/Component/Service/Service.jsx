@@ -1,5 +1,6 @@
 import React from "react";
 import "../../App.css";
+import BackgroundImg from "../../assets/breadcrumb.png";
 import Country3 from "../../assets/country-3.jpg";
 import Country4 from "../../assets/country-4.jpg";
 import Brazil from "../../assets/brazil.jpg";
@@ -19,6 +20,11 @@ import CounterUp from '../Home/Counter.jsx';
 import { Breadcrumb } from "flowbite-react";
 import { HiHome } from "react-icons/hi";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import serviceImg1 from "../../assets/service-1.jpg";
+import serviceImg2 from "../../assets/service-2.jpg";
+import serviceImg3 from "../../assets/service-3.jpg";
+import Country1 from "../../assets/country-1.jpg";
+import Country2 from "../../assets/country-2.jpg";
 
 function Service () {
   return (
