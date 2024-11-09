@@ -1,20 +1,11 @@
 import React from "react";
 import "../../App.css";
 import { Carousel } from "flowbite-react";
-import CounterUp from "./Counter.jsx";
-import { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css'; // Import Swiper styles
-import 'swiper/css/navigation';
-import { Button, Card } from "flowbite-react";
+  import { Button, Card } from "flowbite-react";
 import CarouselImg1 from "../../assets/carousel-1.jpg";
 import CarouselImg2 from "../../assets/carousel-2.jpg";
 import Aboutimg1 from "../../assets/about-2.png";
-import Aboutimg2 from "../../assets/about-3.jpg";
-import BackgroundImg from "../../assets/breadcrumb.png";
-import serviceImg1 from "../../assets/service-1.jpg";
-import serviceImg2 from "../../assets/service-2.jpg";
-import serviceImg3 from "../../assets/service-3.jpg";
+import Aboutimg2 from "../../assets/about-3.jpg"; 
 import Country1 from "../../assets/country-1.jpg";
 import Country2 from "../../assets/country-2.jpg";
 import Country3 from "../../assets/country-3.jpg";
@@ -31,9 +22,6 @@ import officeAus from "../../assets/office-2.jpg";
 import officeCanda from "../../assets/office-1.jpg";
 import officeUnited from "../../assets/office-3.jpg";
 import officeIndia from "../../assets/office-4.jpg";
-import testimonial1 from "../../assets/testimonial-1.jpg";
-import testimonial2 from "../../assets/testimonial-2.jpg";
-import testimonial3 from "../../assets/testimonial-3.jpg";
 import { HiCheckCircle } from "react-icons/hi";
 import { List } from "flowbite-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -41,40 +29,26 @@ import { faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faPassport } from "@fortawesome/free-solid-svg-icons";
 import { faTicket } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faUserCheck } from "@fortawesome/free-solid-svg-icons";
-import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 import { faCcVisa } from "@fortawesome/free-brands-svg-icons";
-
+import { faUserCheck } from "@fortawesome/free-solid-svg-icons";
+import { faPlaneUp } from "@fortawesome/free-solid-svg-icons";
+import Client from './Client.jsx'
+import VisaCategory from '../VisaServices/visaCat.jsx'
+import SecAbout from './Secabout.jsx'
+import Micepng from '../../assets/mice.png'
+import Holiday from '../../assets/Holiday.png'
 
 
 function Home() {
-  const swiperParams = {
-    spaceBetween: 30,
-    speed: 1000, // Enable navigation buttons
-    modules: [], // Adjust the spacing between slides
-    breakpoints: {
-      320: {
-        slidesPerView: 1,  // Mobile: 1 slide per view
-        spaceBetween: 10,  // Less space between slides
-      },
-      640: {
-        slidesPerView: 2,  // Tablet: 2 slides per view
-        spaceBetween: 20,
-      },
-      1024: {
-        slidesPerView: 2,  // Desktop: 3 slides per view
-        spaceBetween: 30,
-      },
-    },
-  };
-  const swiperRef = useRef(null); 
   return (
     <>
       {/* carousel */}
@@ -130,16 +104,12 @@ function Home() {
         className="brightness-50 w-full h-full object-cover"
       />
       <div className="absolute text-center md:text-lg lg:text-xl">
-        <span className="poppins-medium text-white text-md mb-3 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl">
-          Solution for all types of visa
-        </span>
+        
         <h1 className="poppins-medium text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl">
-          Immigration Process <br /> Starts Here!
+        Experience Hassle-Free Travel with us
         </h1>
         <p className="poppins-regular text-white md:text-lg lg:text-xl xl:text-2xl w-11/12 md:w-3/4 lg:w-3/4 xl:w-3/4 text-center mx-auto mt-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy
-          text ever since the 1500s.
+        10+ years of experience 
         </p>
         <button className="bg-[#4CAF50] hover:bg-[#303F9F] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-white poppins-regular rounded-full mt-4">
           More Details
@@ -155,16 +125,11 @@ function Home() {
         className="brightness-50 w-full h-full object-cover"
       />
       <div className="absolute text-center">
-        <span className="poppins-medium text-white text-md mb-3 sm:text-lg md:text-2xl lg:text-4xl xl:text-4xl">
-          Solution for all types of visa
-        </span>
         <h1 className="poppins-medium text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl">
-          Best Visa <br /> Immigration Services
+        Discover Your Dream Destinations with MVTS India Assistance
         </h1>
         <p className="poppins-regular text-white md:text-lg lg:text-xl xl:text-2xl w-11/12 md:w-3/4 lg:w-3/4 xl:w-3/4 text-center mx-auto mt-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy
-          text ever since the 1500s.
+        Your Trusted Partner for Visa Solutions and Travel
         </p>
         <button className="bg-[#4CAF50] hover:bg-[#303F9F] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-white poppins-regular rounded-full mt-4">
           More Details
@@ -178,7 +143,11 @@ function Home() {
 
 
 
+
       {/* About the company */}
+
+
+
 
       <div className="container mx-auto p-4 mt-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -195,33 +164,59 @@ function Home() {
               About the company
             </h2>
             <h2 className="text-[#252B91] capitalize text-5xl poppins-medium mt-2 text-center lg:text-left">
-              We’re Trusted Immigration Consultant Agency.
+            MAITRI VISA AND TRAVEL SERVICES
             </h2>
-            <p className="poppins-regular text-slate-500 mt-5 text-justify lg:text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              architecto consectetur iusto perferendis blanditiis assumenda
-              dignissimos, commodi fuga culpa earum explicabo libero sint est
-              mollitia saepe! Sequi asperiores rerum nemo!
+            <p className="poppins-regular mt-5 text-justify lg:text-left">
+            We excel in offering thorough visa support and travel solutions to both individuals and businesses. Committed to delivering excellence and ensuring customer satisfaction, we focus on streamlining the visa application procedure and enabling effortless travel experiences for our clientele.
             </p>
-            <div className="flex justify-start items-center mt-5 flex-wrap gap-3 md:flex-nowrap lg:flex-nowrap md:justify-center lg:justify-center xl:justify-center">
-              <div className="flex justify-center items-center gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2  gap-3">
+              <div className="flex justify-center items-start gap-3">
                 <FontAwesomeIcon
                   icon={faMapLocationDot}
                   className="text-5xl text-[#252B91]"
                 />
-                <h4 className="poppins-medium text-xl text-[#252B91] ">
-                  Best Immigration Resources
+               <div>
+               <h4 className="poppins-medium text-xl text-[#252B91] ">
+                VISA Services
                 </h4>
+                <p className="poppins-regular">The MVTS Visa Program is designed to make the process of obtaining a travel visa less of a hassle for business travelers.</p>
+               </div>
               </div>
-              <div className="flex justify-center items-center gap-3">
-                <FontAwesomeIcon
-                  icon={faPassport}
-                  className="text-5xl text-[#252B91]"
-                />
-                <h4 className="poppins-medium text-xl text-[#252B91] ">
-                  Return Visas Availabile
+              <div className="flex justify-center items-start gap-3">
+                
+              <FontAwesomeIcon icon={faPlaneUp} className="text-5xl text-[#252B91]" />
+                 
+               
+               <div>
+               <h4 className="poppins-medium text-xl text-[#252B91] ">
+                MICE
                 </h4>
+                <p className="poppins-regular">MICE is an acronym that stands for Meetings, Incentives, Conferences and Events.</p>
+               </div>
               </div>
+              <div className="flex justify-center items-start gap-3">
+              <FontAwesomeIcon
+                    icon={faTicket}
+                    className="text-4xl text-[#252B91] md:text-5xl lg:text-5xl"
+                  />
+                <div>
+                <h4 className="poppins-medium text-xl text-[#252B91] ">
+                Air Tickets
+                </h4>
+                <p className="poppins-regular">When it comes to travelling, the fastest and the most convenient way is air travel.</p>
+                </div>
+                
+              </div>
+              <div className="flex justify-center items-start gap-3">
+              <img src={Holiday} alt=""  className=" h-12 text-[#252B91]" />
+               <div>
+               <h4 className="poppins-medium text-xl text-[#252B91] ">
+                Holiday Packages
+                </h4>
+                <p className="poppins-regular">Holiday tour can be of great enjoyment with us. Going to the holidays with your loved ones or family has its special importance.</p>
+               </div>
+              </div>
+
             </div>
             <div className="flex justify-start items-start md:justify-center lg:justify-start gap-5 mt-5">
               <div className="flex justify-center items-center flex-col md:flex-row lg:flex-col bg-slate-100 rounded-xl">
@@ -232,7 +227,7 @@ function Home() {
                   />
                 </h2>
                 <h2 className="poppins-bold text-[#252B91] text-3xl md:text-6xl lg:text-6xl">
-                  34
+                  10
                 </h2>
                 <p className="poppins-regular text-slate-500 w-1/2 text-center text-sm">
                   Years of Experience
@@ -269,7 +264,7 @@ function Home() {
                   <div>
                     <p>Have any questions?</p>
                     <p className="poppins-semibold text-sm md:text-lg lg:text-lg text-[#252B91]">
-                      Free: +0123 456 7890
+                      Free: +91 9896974869
                     </p>
                   </div>
                 </div>
@@ -279,451 +274,12 @@ function Home() {
 
       {/* second About */}
 
-
-      <div className="sec-about min-h-screen flex justify-center items-center lg:mt-20 mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-5 md:gap-20 z-0 w-full px-4">
-          {/* Card 1 */}
-          <div className="flex items-center justify-center">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-40 h-40  md:w-48 md:h-48 flex flex-col items-center justify-center">
-                <div className="mt-14 sm:mt-20 text-center">
-                  <p className="text-[#252B91] font-bold uppercase poppins-regular text-xs sm:text-sm md:text-base">
-                    VISA CATEGORIES
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#252B91] text-xl sm:text-3xl md:text-3xl font-bold counter-value">
-                      <CounterUp end={31} duration={5000} />
-                    </p>
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      +
-                    </p>
-                  </div>
-                </div>
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#252B91] rounded-t-lg w-40 h-20  md:w-48 md:h-24 flex items-center justify-center">
-                  <FontAwesomeIcon
-                    icon={faPassport}
-                    className="text-white text-5xl  md:text-6xl counter-icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="flex items-center justify-center">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-40 h-40 sm:w-36 sm:h-36 md:w-48 md:h-48 flex flex-col items-center justify-center">
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#252B91] rounded-t-lg w-40 h-20 sm:w-36 sm:h-18 md:w-48 md:h-24 flex items-center justify-center">
-                  <FontAwesomeIcon
-                    icon={faUsers}
-                    className="text-white text-5xl sm:text-4xl md:text-6xl counter-icon"
-                  />
-                </div>
-                <div className="mt-14 sm:mt-20 text-center">
-                  <p className="text-[#252B91] font-bold uppercase poppins-regular text-xs sm:text-sm md:text-base">
-                    Team Members
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      <CounterUp end={377} duration={5000} />
-                    </p>
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      +
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="flex items-center justify-center">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-40 h-40 sm:w-36 sm:h-36 md:w-48 md:h-48 flex flex-col items-center justify-center">
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#252B91] rounded-t-lg w-40 h-20 sm:w-36 sm:h-18 md:w-48 md:h-24 flex items-center justify-center">
-                  <FontAwesomeIcon
-                    icon={faUserCheck}
-                    className="text-white text-5xl sm:text-4xl md:text-6xl counter-icon"
-                  />
-                </div>
-                <div className="mt-14 sm:mt-20 text-center">
-                  <p className="text-[#252B91] font-bold uppercase poppins-regular text-xs sm:text-sm md:text-base">
-                    Visa Process
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      <CounterUp end={4.9} duration={5000} />
-                    </p>
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      K
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 4 */}
-          <div className="flex items-center justify-center">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-40 h-40 sm:w-36 sm:h-36 md:w-48 md:h-48 flex flex-col items-center justify-center">
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#252B91] rounded-t-lg w-40 h-20 sm:w-36 sm:h-18 md:w-48 md:h-24 flex items-center justify-center">
-                  <FontAwesomeIcon
-                    icon={faHandshake}
-                    className="text-white text-5xl sm:text-4xl md:text-6xl counter-icon"
-                  />
-                </div>
-                <div className="mt-14 sm:mt-20 text-center">
-                  <p className="text-[#252B91] font-bold uppercase poppins-regular text-xs sm:text-sm md:text-base">
-                    Success Rates
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      <CounterUp end={98} duration={5000} />
-                    </p>
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      %
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<SecAbout/>
+     
 
       {/* catogries */}
 
-      <div className="container service overflow-hidden pt-5">
-        <div className="container py-5">
-          <div className="section-title text-center mb-5">
-            <div className="sub-style">
-              <h5 className="sub-title uppercase text-[#252B91] poppins-medium text-xl  lg:text-center">
-                Visa Categories
-              </h5>
-            </div>
-            <h1 className="poppins-semibold text-[#252B91] text-3xl  w-11/12 mx-auto text-center  lg:text-center  lg:text-6xl">
-              Enabling Your Immigration Successfully
-            </h1>
-            <p className="mx-auto w-3/4 mt-3   md:text-center text-justify lg:text-center ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              deleniti amet at atque sequi quibusdam cumque itaque repudiandae
-              temporibus, eius nam mollitia voluptas maxime veniam
-              necessitatibus saepe in ab? Repellat!
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-            <div className="lg :grid-cols-6 xl:grid-cols-4">
-              <div className="service-item">
-                <div className="service-inner flex flex-col item-center">
-                  <div className="service-img">
-                    <img src={serviceImg1} alt="Image" className="p-3 rounded-md  md:p-3 lg:p-0" />
-                  </div>
-                  <div className="service-title">
-                    <div className="service-title-name">
-                      <div className="bg-[#252B91] rounded p-3 mx-5 mb-4 inline-block">
-                        <a
-                          href="#"
-                          className=" text-white px-3 poppins-medium text-3xl  mb-0"
-                        >
-                          Job Visa
-                        </a>
-                      </div>
-                      <a
-                        className=" block  text-[#252B91] rounded-full py-3 px-5 mb-4"
-                        href="#"
-                      >
-                        Explore More
-                      </a>
-                    </div>
-                    <div className="service-content pb-4">
-                      <a href="#">
-                        <h4 className="text-white mb-4 py-3 text-xl poppins-medium">
-                          Job Visa
-                        </h4>
-                      </a>
-                      <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg :grid-cols-6 xl:grid-cols-4">
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src={serviceImg2}
-                      className="p-3 rounded-md  md:p-3 lg:p-0"
-                      alt="Image "
-                    />
-                  </div>
-                  <div className="service-title">
-                    <div className="service-title-name">
-                      <div className="bg-[#252B91] text-center rounded p-3 mx-5 mb-4 inline-block">
-                        <a
-                          href="#"
-                          className=" text-white mb-0 poppins-medium text-3xl"
-                        >
-                          Business Visa
-                        </a>
-                      </div>
-                      <a
-                        className=" block text-[#252B91] py-3 px-5 mb-4"
-                        href="#"
-                      >
-                        Explore More
-                      </a>
-                    </div>
-                    <div className="service-content pb-4">
-                      <a href="#">
-                        <h4 class="text-white mb-4 py-3 text-xl poppins-medium">
-                          Business Visa
-                        </h4>
-                      </a>
-                      <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className=" text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg :grid-cols-6 xl:grid-cols-4">
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src={serviceImg3}
-                      className="p-3 rounded-md  md:p-3 lg:p-0"
-                      alt="Image"
-                    />
-                  </div>
-                  <div className="service-title">
-                    <div className="service-title-name">
-                      <div className="bg-[#252B91] text-center rounded p-3 mx-5 mb-4 inline-block">
-                        <a
-                          href="#"
-                          className=" text-white mb-0 poppins-medium text-3xl"
-                        >
-                          Diplomatic Visa
-                        </a>
-                      </div>
-                      <a
-                        className=" block  text-[#252B91]  py-3 px-5 mb-4"
-                        href="#"
-                      >
-                        Explore More
-                      </a>
-                    </div>
-                    <div className="service-content pb-4">
-                      <a href="#">
-                        <h4 class="text-white mb-4 py-3 text-xl poppins-medium">
-                          Diplomatic Visa
-                        </h4>
-                      </a>
-                      <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg :grid-cols-6 xl:grid-cols-4">
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src={serviceImg1}
-                      className="p-3 rounded-md  md:p-3 lg:p-0"
-                      alt="Image"
-                    />
-                  </div>
-                  <div className="service-title">
-                    <div className="service-title-name">
-                      <div className="bg-[#252B91] inline-block text-center rounded p-3 mx-5 mb-4">
-                        <a
-                          href="#"
-                          className=" text-white mb-0 poppins-medium text-3xl"
-                        >
-                          Residence Visa
-                        </a>
-                      </div>
-                      <a
-                        className=" block  text-[#252B91]  py-3 px-5 mb-4"
-                        href="#"
-                      >
-                        Explore More
-                      </a>
-                    </div>
-                    <div className="service-content pb-4">
-                      <a href="#">
-                        <h4 class="text-white mb-4 py-3 poppins-medium text-xl">
-                          Residence Visa
-                        </h4>
-                      </a>
-                      <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg :grid-cols-6 xl:grid-cols-4">
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src={serviceImg2}
-                      className="p-3 rounded-md  md:p-3 lg:p-0"
-                      alt="Image"
-                    />
-                  </div>
-                  <div className="service-title">
-                    <div className="service-title-name">
-                      <div className="bg-[#252B91] inline-block text-center rounded p-3 mx-5 mb-4">
-                        <a
-                          href="#"
-                          className=" text-white mb-0 poppins-medium text-3xl"
-                        >
-                          Tourist Visa
-                        </a>
-                      </div>
-                      <a
-                        className=" block  text-[#252B91]  py-3 px-5 mb-4"
-                        href="#"
-                      >
-                        Explore More
-                      </a>
-                    </div>
-                    <div className="service-content pb-4">
-                      <a href="#">
-                        <h4 class="text-white mb-4 py-3 text-xl poppins-medium">
-                          Tourist Visa
-                        </h4>
-                      </a>
-                      <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg :grid-cols-6 xl:grid-cols-4">
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src={serviceImg3}
-                     className="p-3 rounded-md  md:p-3 lg:p-0"
-                      alt="Image"
-                    />
-                  </div>
-                  <div className="service-title">
-                    <div className="service-title-name">
-                      <div className="bg-[#252B91] text-center rounded p-3 mx-5 mb-4 inline-block">
-                        <a
-                          href="#"
-                          className=" text-white poppins-medium p-3 text-3xl "
-                        >
-                          Student Visa
-                        </a>
-                      </div>
-                      <a
-                        className=" block  text-[#252B91]  py-3 px-5 mb-4"
-                        href="#"
-                      >
-                        Explore More
-                      </a>
-                    </div>
-                    <div className="service-content pb-4">
-                      <a href="#">
-                        <h4 class="text-white mb-4 py-3 text-xl poppins-medium">
-                          Student Visa
-                        </h4>
-                      </a>
-                      <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <VisaCategory/>
 
       {/* why choose us */}
 
@@ -743,88 +299,106 @@ function Home() {
               necessitatibus saepe in ab? Repellat
             </p>
           </div>
-
-          <div className=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-10 mt-10">
+          
+ 
+   <div className="flex flex-col items-center gap-6 mt-20">
+   <div className="flex flex-wrap  justify-center gap-6 md:flex-wrap lg:flex-nowrap  md:justify-between w-full">
             <div className="feature p-3 md:p-3 lg:p-0">
-              <Card className=" text-center  bg-slate-100 feature-content">
-                <h2 className="bg-slate-200 mx-auto py-5 px-6 rounded-md ">
+              <Card className="w-[300px] h-[300px] flex flex-col justify-between items-center text-center  bg-slate-100 feature-content">
+                <h2 className="text-center mx-auto py-7 px-6 rounded-md ">
+                <FontAwesomeIcon icon={faUserTie} 
+                className="text-6xl text-[#303F9F] font-bold feature-icon"
+                />
+                </h2>
+                <p className="poppins-medium text-md ">
+                	A decade-plus of professional experience collaborating with an Embassy/High Commission.
+                </p>
+              </Card>
+            </div>
+            <div className="feature p-3 md:p-3 lg:p-0">
+              <Card className="w-[300px] h-[300px] flex flex-col justify-between items-center text-center  bg-slate-100 feature-content">
+                <h2 className="text-center mx-auto py-5 px-6 rounded-md ">
                   <FontAwesomeIcon
-                    icon={faDollarSign}
+                     icon={faTicket}
                     className="text-6xl text-[#303F9F] font-bold feature-icon"
                   />
                 </h2>
-                <h5 className="text-2xl font-bold text-[#303F9F]">
-                  Cost-Effective
-                </h5>
-                <p className="font-normal ">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
+                <p className=" poppins-medium text-md ">
+                10+ years of outstanding performance in consultancy services.
                 </p>
-                <button className=" text-[#303F9F]">Read More</button>
               </Card>
             </div>
-            <div className="feature p-3 md:p-3 lg:p-0">
-              <Card className=" text-center  bg-slate-100 feature-content ">
-                <h2 className="text-[#303F9F] text-6xl flex justify-center items-center bg-slate-200 mx-auto py-5 px-6 rounded-md ">
-                  <FontAwesomeIcon
-                    icon={faCcVisa}
-                    className="feature-icon text-[#303F9F]"
-                  />
-                </h2>
-                <h5 className="text-2xl font-bold text-[#303F9F]">
-                  Visa Assistance
-                </h5>
-                <p className="font-normal ">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                <button className=" text-[#303F9F]">Read More</button>
-              </Card>
-            </div>
-            <div className="feature p-3 md:p-3 lg:p-0">
-              <Card className=" text-center  bg-slate-100  feature-content">
-                <h2 className="bg-slate-200 mx-auto py-5 px-6 rounded-md ">
-                  <FontAwesomeIcon
-                    icon={faPassport}
-                    className="text-6xl text-[#303F9F] font-bold feature-icon"
-                  />
-                </h2>
-                <h5 className="text-2xl font-bold text-[#303F9F]">
-                  Faster Processing
-                </h5>
-                <p className="font-normal ">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                <button className=" text-[#303F9F]">Read More</button>
-              </Card>
-            </div>
-            <div className="feature p-3 md:p-3 lg:p-0">
-              <Card className="text-center  bg-slate-100 feature-content ">
-                <h2 className="bg-slate-200 mx-auto py-5 px-6 rounded-md">
+            <div className="feature p-3 md:p-3 lg:p-0 ">
+              <Card className="w-[300px] h-[300px] flex flex-col justify-between items-center text-center  bg-slate-100 feature-content">
+                <h2 className="text-center mx-auto -mt-10 py-5 px-6 rounded-md ">
                   <FontAwesomeIcon
                     icon={faUsers}
                     className="text-6xl text-[#303F9F] font-bold feature-icon"
                   />
                 </h2>
-                <h5 className="text-2xl font-bold text-[#303F9F]">
-                  Direct Interviews
-                </h5>
-                <p className="font-normal ">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
+                <p className="poppins-medium text-md ">
+                30,000+ Satisfied Customer
                 </p>
-                <button className=" text-[#303F9F]">Read More</button>
               </Card>
             </div>
-          </div>
-          <div className="text-center">
-            <button className="bg-[#4CAF50] text-white hover:bg-[#303F9F] poppins-medium px-5 py-3 mt-5 rounded-full">
-              {" "}
-              More Feature
-            </button>
-          </div>
-        </div>
+            
+            <div className="feature p-3 md:p-3 lg:p-0">
+              <Card className=" w-[300px] h-[300px] flex flex-col justify-between items-center text-center  bg-slate-100 feature-content">
+                <h2 className="text-center mx-auto py-5 px-6 rounded-md ">
+                  <FontAwesomeIcon
+                    icon={faCcVisa}
+                    className="text-6xl text-[#303F9F] font-bold feature-icon"
+                  />
+                </h2>
+                <p className="poppins-medium text-md ">
+                	Exceptional expertise and comprehension of visa rules and regulations.
+                </p>
+              </Card>
+            </div>
+            </div>
+            <div className="flex justify-center gap-6 w-full flex-wrap  md:flex-wrap lg:flex-nowrap max-w-4xl">
+            <div className="feature p-3 md:p-3 lg:p-0">
+              <Card className=" w-[300px] h-[300px] flex flex-col justify-between items-center text-center  bg-slate-100 feature-content">
+                <h2 className="text-center mx-auto py-5 px-6 rounded-md ">
+                  <FontAwesomeIcon
+                    icon={faPassport}
+                    className="text-6xl text-[#303F9F] font-bold feature-icon"
+                  />
+                </h2>
+                <p className="poppins-medium text-md ">
+                High standards of personal and professional integrity.
+                </p>
+              </Card>
+            </div>
+            <div className="feature p-3 md:p-3 lg:p-0">
+              <Card className=" w-[300px] h-[300px] flex flex-col justify-between items-center text-center  bg-slate-100 feature-content">
+                <h2 className="text-center mx-auto py-5 px-6 rounded-md ">
+                  <FontAwesomeIcon
+                    icon={faUserCheck}
+                    className="text-6xl text-[#303F9F] font-bold feature-icon"
+                  />
+                </h2>
+                <p className="poppins-medium text-md ">
+              	Unbiased, Honest, and High-Quality Guidance.
+                </p>
+              </Card>
+            </div>
+            <div className="feature p-3 md:p-3 lg:p-0">
+              <Card className=" w-[300px] h-[300px] flex flex-col justify-between items-center text-center  bg-slate-100 feature-content">
+                <h2 className="text-center mx-auto py-7 px-6 rounded-md ">
+                  <FontAwesomeIcon
+                    icon={faHandshake}
+                    className="text-6xl text-[#303F9F] font-bold feature-icon"
+                  />
+                </h2>
+                <p className="poppins-medium text-md ">
+                A personalized and dedicated approach focused on the client's needs.
+                </p>
+              </Card>
+            </div>
+            </div>
+   </div>            
+   </div>  
       </section>
 
       {/* Countries  */}
@@ -962,107 +536,7 @@ function Home() {
 
       {/* Owl carousel */}
 
-      <div className="container mx-auto mt-24">
-        <div className="text-center">
-          <span className="uppercase text-[#303F9F] poppins-medium text-xl">
-            OUR CLIENTS RIVIEWS
-          </span>
-          <h2 className=" poppins-semibold text-[#303F9F] text-3xl text-center lg:text-6xl">
-            What Our Clients Say
-          </h2>
-          <p className=" mx-auto w-3/4 mt-3 text-justify lg:text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            deleniti amet at atque sequi quibusdam cumque itaque repudiandae
-            temporibus, eius nam mollitia voluptas maxime veniam necessitatibus
-            saepe in ab? Repellat
-          </p>
-        </div>
-        <Swiper {...swiperParams} className="mt-20 mb-10">
-    <SwiperSlide>
-      <div className="item testimonial-item p-3 md:p-3 lg:p-0">
-            <div className="p-4 mb-5 bg-slate-100 rounded-xl">
-              <p className="text-lg mb-0 poppins-regular text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitati eiusmod tempor
-                incididunt.
-              </p>
-              <div className="flex justify-end">
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-              </div>
-            </div>
-            <div className="flex">
-              <div className="rounded-full w-24 h-24 me-4">
-                <img className="rounded-full" src={testimonial3} alt="img" />
-              </div>
-              <div className="my-auto text-slate-950 poppins-regular ">
-                <h5>Person Name</h5>
-                <p className="mb-0">Profession</p>
-              </div>
-            </div>
-          </div>
-          </SwiperSlide>
-    <SwiperSlide>
-      <div className=" item testimonial-item p-3 md:p-3 lg:p-0">
-            <div className="p-4 mb-5 bg-slate-100 rounded-xl   w-full">
-              <p className="text-lg mb-0 poppins-regular text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitati eiusmod tempor
-                incididunt.
-              </p>
-              <div className="flex justify-end">
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-              </div>
-            </div>
-            <div className="flex">
-              <div className="rounded-full w-24 h-24 me-4">
-                <img className="rounded-full" src={testimonial1} alt="img" />
-              </div>
-              <div className="my-auto poppins-regular text-black">
-                <h5>Person Name</h5>
-                <p className="mb-0">Profession</p>
-              </div>
-            </div>
-          </div>
-          </SwiperSlide>
-    <SwiperSlide>
-      <div className=" item testimonial-item p-3 md:p-3 lg:p-0">
-            <div className="p-4 mb-5 bg-slate-100 rounded-xl">
-              <p className="text-lg mb-0 poppins-regular text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitati eiusmod tempor
-                incididunt.
-              </p>
-              <div className="flex justify-end">
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-                <FontAwesomeIcon icon={faStar} className="text-[#4CAF50]" />
-              </div>
-            </div>
-            <div className="flex">
-              <div className="rounded-full w-24 h-24 me-4">
-                <img className="rounded-full" src={testimonial2} alt="img" />
-              </div>
-              <div className="my-auto poppins-regular text-black">
-                <h5>Person Name</h5>
-                <p className="mb-0">Profession</p>
-              </div>
-            </div>
-          </div></SwiperSlide>
-  </Swiper>
-      </div>
+    <Client/>
 
       {/* Traning */}
 
@@ -1344,6 +818,23 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* news latter */}
+
+    <section>
+      <div className="container mt-10">
+          <div>
+            <div className="flex justify-center items-center border border-black h-52">
+              <p className="w-1/2">Secure your visa through a highly reputable Visa & Immigration consultancy. Our dedicated and experienced team at Visa Consultancy is committed to helping you achieve your dream destination.</p>
+              <form className="flex justify-center items-center" >
+                <input type="email" className="w-96 rounded-md" placeholder="Enter Email Address " />
+                <button><FontAwesomeIcon icon={faPaperPlane} className="text-3xl text-white bg-[#4CAF50] p-2 rounded-md" /></button>
+              </form>
+            </div>
+          </div>
+      </div>
+    </section>
+
     </>
   );
 }

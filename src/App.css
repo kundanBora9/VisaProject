@@ -94,11 +94,37 @@
     left: 0;
     margin-left: 50px;
     margin-right: 50px;
-    text-align: center;
     border-radius: 10px;
     background:#252B91;
     opacity: 0;
     transition: 0.5s;
+}
+
+
+.service .service-item .service-inner .service-title .service-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.service .service-item .service-inner .service-title .service-content ul li {
+  padding: 5px;
+  border-bottom: 1px solid rgba(256, 256, 256, .1);
+}
+.service .service-item .service-inner .service-title .service-content {
+  position: absolute;
+  bottom: -100%; 
+  left: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align:center;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #020024 50%, #090979 100%,);
+
+
+  opacity: 0;
+  transition: 0.5s;
+  overflow: hidden; /* Add this line */
 }
 
 .service .service-item:hover .service-inner .service-title .service-content {
@@ -225,50 +251,6 @@
 }
 
 
-.testimonial .owl-carousel.testimonial-carousel {
-  position: relative;
-}
-
-.testimonial .owl-carousel.testimonial-carousel .testimonial-item .testimonial-content {
-  position: relative;
-  border-radius: 10px;
-  background: whitesmoke;
-}
-
-.testimonial .owl-carousel.testimonial-carousel .testimonial-item .testimonial-content::after {
-  position: absolute;
-  content: "";
-  width: 45px;
-  height: 45px;
-  bottom: -20px;
-  left: 30px;
-  transform: rotate(45deg);
-  background: whitesmoke;
-  z-index: -1;
-}
-
-.testimonial .owl-carousel.testimonial-carousel .owl-nav {
-  position: absolute;
-  top: -60px;
-  right: 0;
-  display: flex;
-  font-size: 40px;
-  color: whitesmoke;
-}
-
-.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-prev {
-  margin-right: 40px;
-}
-
-.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-prev,
-.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-next {
-  transition: 0.5s;
-}
-
-.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-next:hover {
-  color:whitesmoke;
-}
 
 .feature  :hover .feature-icon{
   transform: rotate(360deg);

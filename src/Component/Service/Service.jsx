@@ -71,20 +71,17 @@ function Service () {
           <div className="section-title text-center mb-5">
             <div className="sub-style">
               <h5 className="sub-title uppercase text-[#252B91] poppins-medium text-xl  lg:text-center">
-                Visa Categories
+                Visa Services
               </h5>
             </div>
             <h1 className="poppins-semibold text-[#252B91] text-3xl  w-11/12 mx-auto text-center  lg:text-center  lg:text-6xl">
-              Enabling Your Immigration Successfully
+            Services Offered by MAITRI VISA AND TRAVEL SERVICES:
             </h1>
             <p className="mx-auto w-3/4 mt-3  md:text-center text-justify lg:text-center ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              deleniti amet at atque sequi quibusdam cumque itaque repudiandae
-              temporibus, eius nam mollitia voluptas maxime veniam
-              necessitatibus saepe in ab? Repellat!
+            At MAITRI VISA AND TRAVEL SERVICES, we strive to provide comprehensive and personalized services to meet all your visa and travel needs. Contact us today to learn more about how we can assist you with your travel plans.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
             <div className="lg :grid-cols-6 xl:grid-cols-4">
               <div className="service-item">
                 <div className="service-inner flex flex-col item-center">
@@ -96,9 +93,9 @@ function Service () {
                       <div className="bg-[#252B91] rounded p-3 mx-5 mb-4 inline-block">
                         <a
                           href="#"
-                          className=" text-white px-3 poppins-medium text-3xl  mb-0"
+                          className=" text-white px-3 poppins-medium text-xl  mb-0"
                         >
-                          Job Visa
+                          Visa Assistance
                         </a>
                       </div>
                       <a
@@ -111,22 +108,16 @@ function Service () {
                     <div className="service-content pb-4">
                       <a href="#">
                         <h4 className="text-white mb-4 py-3 text-xl poppins-medium">
-                          Job Visa
+                        Visa Assistance
                         </h4>
                       </a>
                       <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
+                        <ul className="mb-4 text-slate-300 list-disc">
+                          <li>Consultation on visa requirements and eligibility</li>
+                          <li>Assistance with visa application forms and documentation</li>
+                          <li>Guidance on visa interview preparation</li>
+                          <li>Tracking visa application status</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -148,9 +139,9 @@ function Service () {
                       <div className="bg-[#252B91] text-center rounded p-3 mx-5 mb-4 inline-block">
                         <a
                           href="#"
-                          className=" text-white mb-0 poppins-medium text-3xl"
+                          className=" text-white mb-0 poppins-medium text-xl"
                         >
-                          Business Visa
+                          Visa Types
                         </a>
                       </div>
                       <a
@@ -163,22 +154,20 @@ function Service () {
                     <div className="service-content pb-4">
                       <a href="#">
                         <h4 class="text-white mb-4 py-3 text-xl poppins-medium">
-                          Business Visa
+                        Visa Types
                         </h4>
                       </a>
                       <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className=" text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
+                      <ul className="mb-4 text-slate-300 list-disc">
+                          <li> Tourist visas</li>
+                          <li>Business visas</li>
+                          <li>Student visas</li>
+                          <li>Work visas</li>
+                          <li>Transit visas</li>
+                          <li>Immigration visas</li>
+                          <li>Family and spouse visas</li>
+                          <li>Special category visas (e.g., diplomatic visas)</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -200,9 +189,9 @@ function Service () {
                       <div className="bg-[#252B91] text-center rounded p-3 mx-5 mb-4 inline-block">
                         <a
                           href="#"
-                          className=" text-white mb-0 poppins-medium text-3xl"
+                          className=" text-white mb-0 poppins-medium text-xl"
                         >
-                          Diplomatic Visa
+                          Travel Services
                         </a>
                       </div>
                       <a
@@ -215,22 +204,19 @@ function Service () {
                     <div className="service-content pb-4">
                       <a href="#">
                         <h4 class="text-white mb-4 py-3 poppins-medium">
-                          Diplomatic Visa
+                        Travel Services
                         </h4>
                       </a>
                       <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
+                      <ul className="mb-4 text-slate-300 list-disc">
+                          <li>Flight bookings</li>
+                          <li>Travel insurance</li>
+                          <li>Airport transfers</li>
+                          <li>Hotel reservations</li>
+                          <li>Group travel arrangements</li>
+                          <li>Customized travel itineraries</li>
+                          <li>Travel advisory and assistance</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -252,9 +238,9 @@ function Service () {
                       <div className="bg-[#252B91] inline-block text-center rounded p-3 mx-5 mb-4">
                         <a
                           href="#"
-                          className=" text-white mb-0 poppins-medium text-3xl"
+                          className=" text-white mb-0 poppins-medium text-xl"
                         >
-                          Residence Visa
+                         Passport Services
                         </a>
                       </div>
                       <a
@@ -271,18 +257,12 @@ function Service () {
                         </h4>
                       </a>
                       <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
+                      <ul className="mb-4 text-slate-300 list-disc">
+                          <li>Passport renewal services</li>
+                          <li>Passport application assistance</li>
+                          <li>Lost or damaged passport assistance</li>
+                          <li>Name or address change on passport</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -304,9 +284,9 @@ function Service () {
                       <div className="bg-[#252B91] inline-block text-center rounded p-3 mx-5 mb-4">
                         <a
                           href="#"
-                          className=" text-white mb-0 poppins-medium text-3xl"
+                          className=" text-white mb-0 poppins-medium text-xl"
                         >
-                          Tourist Visa
+                        Document Attestation
                         </a>
                       </div>
                       <a
@@ -319,22 +299,15 @@ function Service () {
                     <div className="service-content pb-4">
                       <a href="#">
                         <h4 class="text-white mb-4 py-3 poppins-medium">
-                          Tourist Visa
+                        Document Attestation
                         </h4>
                       </a>
                       <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
-                        <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
-                          href="#"
-                        >
-                          Explore More
-                        </a>
+                      <ul className="mb-4 text-slate-300 list-disc">
+                          <li>Notary services</li>
+                          <li>Apostille services</li>
+                          <li>Document legalization</li> 
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -353,12 +326,12 @@ function Service () {
                   </div>
                   <div className="service-title">
                     <div className="service-title-name">
-                      <div className="bg-[#252B91] text-center rounded p-3 mx-5 mb-4 inline-block">
+                      <div className="bg-[#252B91] text-center rounded p-3 mx-auto   mb-4 inline-block whitespace-nowrap">
                         <a
                           href="#"
-                          className=" text-white poppins-medium p-3 text-3xl "
+                          className=" text-white poppins-medium  text-xl "
                         >
-                          Student Visa
+                          Immigration Consultation
                         </a>
                       </div>
                       <a
@@ -375,18 +348,104 @@ function Service () {
                         </h4>
                       </a>
                       <div className="px-4">
-                        <p className="mb-4 text-slate-500">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Mollitia fugit dolores nesciunt adipisci
-                          obcaecati veritatis cum, ratione aspernatur autem
-                          velit.
-                        </p>
+                        <ul className="mb-4 text-slate-300 list-disc">
+                         <li>Immigration document preparation</li>
+                         <li>Assistance with immigration applications</li>
+                         <li>Consultation on immigration policies and procedures</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg :grid-cols-6 xl:grid-cols-4">
+              <div className="service-item">
+                <div className="service-inner">
+                  <div className="service-img">
+                    <img
+                      src={serviceImg3}
+                     className="p-3 rounded-md  md:p-3 lg:p-0"
+                      alt="Image"
+                    />
+                  </div>
+                  <div className="service-title">
+                    <div className="service-title-name">
+                      <div className="bg-[#252B91] text-center rounded p-3 mx-auto   mb-4 inline-block whitespace-nowrap">
                         <a
-                          className="text-white bg-[#4CAF50] rounded-full py-3 px-5"
                           href="#"
+                          className=" text-white poppins-medium  text-xl "
                         >
-                          Explore More
+                          Travel Packages
                         </a>
+                      </div>
+                      <a
+                        className=" block  text-[#252B91]  py-3 px-5 mb-4"
+                        href="#"
+                      >
+                        Explore More
+                      </a>
+                    </div>
+                    <div className="service-content pb-4">
+                      <a href="#">
+                        <h4 class="text-white mb-4 py-3 poppins-medium">
+                        Travel Packages
+                        </h4>
+                      </a>
+                      <div className="px-4">
+                        <ul className="mb-4 text-slate-300 list-disc">
+                         <li> Honeymoon packages</li>
+                         <li> Corporate travel packages</li>
+                         <li>Adventure travel packages</li>
+                         <li>Religious and spiritual travel packages</li>
+                         <li>Tailored travel packages for individuals, families, and groups</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg :grid-cols-6 xl:grid-cols-4">
+              <div className="service-item">
+                <div className="service-inner">
+                  <div className="service-img">
+                    <img
+                      src={serviceImg3}
+                     className="p-3 rounded-md  md:p-3 lg:p-0"
+                      alt="Image"
+                    />
+                  </div>
+                  <div className="service-title">
+                    <div className="service-title-name">
+                      <div className="bg-[#252B91] text-center rounded p-3 mx-auto   mb-4 inline-block whitespace-nowrap">
+                        <a
+                          href="#"
+                          className=" text-white poppins-medium  text-xl "
+                        >
+                          Additional Services
+                        </a>
+                      </div>
+                      <a
+                        className=" block  text-[#252B91]  py-3 px-5 mb-4"
+                        href="#"
+                      >
+                        Explore More
+                      </a>
+                    </div>
+                    <div className="service-content pb-4">
+                      <a href="#">
+                        <h4 class="text-white mb-4 py-3 poppins-medium">
+                        Additional Services
+                        </h4>
+                      </a>
+                      <div className="px-4">
+                        <ul className="mb-4 text-slate-300 list-disc">
+                         <li>Translation services</li>
+                         <li>Travel concierge services</li>
+                         <li>Travel visa consultation and advisory</li>
+                         <li>Travel health and vaccination advice</li>
+                        </ul>
                       </div>
                     </div>
                   </div>

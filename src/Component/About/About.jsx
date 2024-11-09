@@ -1,5 +1,6 @@
 import React from "react";
 import "../../App.css";
+import SecAbout from '../Home/Secabout.jsx'
 import Aboutimg1 from "../../assets/about-2.png";
 import Aboutimg2 from "../../assets/about-3.jpg";
 import BackgroundImg from "../../assets/breadcrumb.png";
@@ -30,6 +31,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import CounterUp from '../Home/Counter.jsx';
 import { Breadcrumb } from "flowbite-react";
 import { HiHome } from "react-icons/hi";
+import Holiday from '../../assets/Holiday.png'
+import { faPlaneUp } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
@@ -41,7 +44,7 @@ function About() {
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-6xl text-center">
       <h1 className="poppins-semibold text-6xl">About</h1>
       <Breadcrumb aria-label="Default breadcrumb example" className="mt-3 text-[#4CAF50]">
-      <Breadcrumb.Item href="#" icon={HiHome}>
+      <Breadcrumb.Item href="/" icon={HiHome}>
         Home
       </Breadcrumb.Item>
       <Breadcrumb.Item href="#" className="text-[#4CAF50]">About</Breadcrumb.Item>
@@ -53,8 +56,23 @@ function About() {
 
 {/* about */}
 
-<div className="container mx-auto p-4 mt-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+<div className="container mx-auto mt-20">
+<div className="text-center">
+            <h2 className=" poppins-semibold text-[#303F9F] text-3xl text-center lg:text-6xl">
+            At MAITRI VISA AND TRAVEL SERVICES
+            </h2>
+            <p className=" poppins-regular mx-auto w-3/4 mt-3 text-justify lg:text-center">
+            We excel in offering thorough visa support and travel solutions to both individuals and businesses. Committed to delivering excellence and ensuring customer satisfaction, we focus on streamlining the visa application procedure and enabling effortless travel experiences for our clientele.
+            </p>
+          </div>
+</div>
+
+<div>
+
+</div>
+
+<div className="container mx-auto p-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-start">
           <div className="mx-auto  rounded-xl border-b-[#003A66] overflow-hidden">
             <div className="relative bg-slate-100">
               <img src={Aboutimg1} alt="" />
@@ -64,37 +82,58 @@ function About() {
             </div>
           </div>
           <div className="col-span-1">
-            <h2 className="text-[#252B91] text-xl  uppercase poppins-medium text-center lg:text-left ">
-              About the company
-            </h2>
-            <h2 className="text-[#252B91] capitalize text-5xl poppins-medium mt-2 text-center lg:text-left">
-              We’re Trusted Immigration Consultant Agency.
-            </h2>
-            <p className="poppins-regular text-slate-500 mt-5 text-justify lg:text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              architecto consectetur iusto perferendis blanditiis assumenda
-              dignissimos, commodi fuga culpa earum explicabo libero sint est
-              mollitia saepe! Sequi asperiores rerum nemo!
+            <p className="poppins-regular  mt-5 text-justify lg:text-justify">
+            Our skilled team is committed to providing customized services designed to accommodate the distinct requirements and desires of every client. Whether you're arranging a vacation, business trip, or immigration endeavor, we offer professional guidance and assistance throughout the entire process.From visa consultation and document preparation to appointment scheduling and visa status tracking, we expertly manage every step of the visa application process with accuracy and effectiveness. Our aim is to guarantee a seamless visa application experience, ensuring you're fully equipped for your travel adventure.
+
             </p>
-            <div className="flex justify-start items-center mt-5 flex-wrap gap-3 md:flex-nowrap lg:flex-nowrap md:justify-center lg:justify-center xl:justify-center">
-              <div className="flex justify-center items-center gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2  gap-3 mt-3">
+              <div className="flex justify-center items-start gap-3">
                 <FontAwesomeIcon
                   icon={faMapLocationDot}
                   className="text-5xl text-[#252B91]"
                 />
-                <h4 className="poppins-medium text-xl text-[#252B91] ">
-                  Best Immigration Resources
+               <div>
+               <h4 className="poppins-medium text-xl text-[#252B91] ">
+                VISA Services
                 </h4>
+                <p className="poppins-regular">The MVTS Visa Program is designed to make the process of obtaining a travel visa less of a hassle for business travelers.</p>
+               </div>
               </div>
-              <div className="flex justify-center items-center gap-3">
+              <div className="flex justify-center items-start gap-3">
                 <FontAwesomeIcon
-                  icon={faPassport}
+                  icon={faPlaneUp}
                   className="text-5xl text-[#252B91]"
                 />
-                <h4 className="poppins-medium text-xl text-[#252B91] ">
-                  Return Visas Availabile
+               <div>
+               <h4 className="poppins-medium text-xl text-[#252B91] ">
+                MICE
                 </h4>
+                <p className="poppins-regular">MICE is an acronym that stands for Meetings, Incentives, Conferences and Events.</p>
+               </div>
               </div>
+              <div className="flex justify-center items-start gap-3">
+              <FontAwesomeIcon
+                    icon={faTicket}
+                    className="text-4xl text-[#252B91] md:text-5xl lg:text-5xl"
+                  />
+                <div>
+                <h4 className="poppins-medium text-xl text-[#252B91] ">
+                Air Tickets
+                </h4>
+                <p className="poppins-regular">When it comes to travelling, the fastest and the most convenient way is air travel.</p>
+                </div>
+                
+              </div>
+              <div className="flex justify-center items-start gap-3">
+              <img src={Holiday} alt=""  className=" h-12 text-[#252B91]" />
+               <div>
+               <h4 className="poppins-medium text-xl text-[#252B91] ">
+                Holiday Packages
+                </h4>
+                <p className="poppins-regular">Holiday tour can be of great enjoyment with us. Going to the holidays with your loved ones or family has its special importance.</p>
+               </div>
+              </div>
+
             </div>
             <div className="flex justify-start items-start md:justify-center lg:justify-start gap-5 mt-5">
               <div className="flex justify-center items-center flex-col md:flex-row lg:flex-col bg-slate-100 rounded-xl">
@@ -105,7 +144,7 @@ function About() {
                   />
                 </h2>
                 <h2 className="poppins-bold text-[#252B91] text-3xl md:text-6xl lg:text-6xl">
-                  34
+                  10
                 </h2>
                 <p className="poppins-regular text-slate-500 w-1/2 text-center text-sm">
                   Years of Experience
@@ -142,7 +181,7 @@ function About() {
                   <div>
                     <p>Have any questions?</p>
                     <p className="poppins-semibold text-sm md:text-lg lg:text-lg text-[#252B91]">
-                      Free: +0123 456 7890
+                      Free: +91 9896974869
                     </p>
                   </div>
                 </div>
@@ -150,120 +189,20 @@ function About() {
         </div>
       </div>
 
+<div className="container mx-auto poppins-regular ">
+<p className="text-justify">
+At MAITRI VISA AND TRAVEL SERVICES, we specialize in providing comprehensive visa assistance and travel services to individuals and businesses. With a commitment to excellence and customer satisfaction, we strive to simplify the visa application process and facilitate seamless travel experiences for our clients.
+Our team of experienced professionals is dedicated to delivering personalized services tailored to meet the unique needs and preferences of each client. Whether you're planning a leisure trip, business travel, or immigration, we offer expert guidance and support every step of the way.
+From visa consultation and document preparation to appointment scheduling and visa status tracking, we handle all aspects of the visa application process with precision and efficiency. Our goal is to ensure that your visa application is processed smoothly and that you are well-prepared for your travel journey.
+In addition to visa services, we also provide a range of travel-related services, including flight bookings, hotel reservations, travel insurance, and more. With our comprehensive approach to travel assistance, we aim to make your travel experience hassle-free and memorable.
+At MAITRI VISA AND TRAVEL SERVICES, we believe in building long-term relationships with our clients based on trust, integrity, and reliability. We are committed to exceeding expectations and delivering exceptional service that consistently meets the highest standards of quality.
+
+</p>
+</div>
 
 {/* sec -about */}
   
-<div className="sec-about min-h-screen flex justify-center items-center lg:mt-20 mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-5 md:gap-20 z-0 w-full px-4">
-          {/* Card 1 */}
-          <div className="flex items-center justify-center">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-40 h-40  md:w-48 md:h-48 flex flex-col items-center justify-center">
-                <div className="mt-14 sm:mt-20 text-center">
-                  <p className="text-[#252B91] font-bold uppercase poppins-regular text-xs sm:text-sm md:text-base">
-                    VISA CATEGORIES
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#252B91] text-xl sm:text-3xl md:text-3xl font-bold counter-value">
-                      <CounterUp end={31} duration={5000} />
-                    </p>
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      +
-                    </p>
-                  </div>
-                </div>
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#252B91] rounded-t-lg w-40 h-20  md:w-48 md:h-24 flex items-center justify-center">
-                  <FontAwesomeIcon
-                    icon={faPassport}
-                    className="text-white text-5xl  md:text-6xl counter-icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="flex items-center justify-center">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-40 h-40 sm:w-36 sm:h-36 md:w-48 md:h-48 flex flex-col items-center justify-center">
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#252B91] rounded-t-lg w-40 h-20 sm:w-36 sm:h-18 md:w-48 md:h-24 flex items-center justify-center">
-                  <FontAwesomeIcon
-                    icon={faUsers}
-                    className="text-white text-5xl sm:text-4xl md:text-6xl counter-icon"
-                  />
-                </div>
-                <div className="mt-14 sm:mt-20 text-center">
-                  <p className="text-[#252B91] font-bold uppercase poppins-regular text-xs sm:text-sm md:text-base">
-                    Team Members
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      <CounterUp end={377} duration={5000} />
-                    </p>
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      +
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="flex items-center justify-center">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-40 h-40 sm:w-36 sm:h-36 md:w-48 md:h-48 flex flex-col items-center justify-center">
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#252B91] rounded-t-lg w-40 h-20 sm:w-36 sm:h-18 md:w-48 md:h-24 flex items-center justify-center">
-                  <FontAwesomeIcon
-                    icon={faUserCheck}
-                    className="text-white text-5xl sm:text-4xl md:text-6xl counter-icon"
-                  />
-                </div>
-                <div className="mt-14 sm:mt-20 text-center">
-                  <p className="text-[#252B91] font-bold uppercase poppins-regular text-xs sm:text-sm md:text-base">
-                    Visa Process
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      <CounterUp end={4.9} duration={5000} />
-                    </p>
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      K
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 4 */}
-          <div className="flex items-center justify-center">
-            <div className="counter">
-              <div className="relative bg-white rounded-full shadow-lg w-40 h-40 sm:w-36 sm:h-36 md:w-48 md:h-48 flex flex-col items-center justify-center">
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#252B91] rounded-t-lg w-40 h-20 sm:w-36 sm:h-18 md:w-48 md:h-24 flex items-center justify-center">
-                  <FontAwesomeIcon
-                    icon={faHandshake}
-                    className="text-white text-5xl sm:text-4xl md:text-6xl counter-icon"
-                  />
-                </div>
-                <div className="mt-14 sm:mt-20 text-center">
-                  <p className="text-[#252B91] font-bold uppercase poppins-regular text-xs sm:text-sm md:text-base">
-                    Success Rates
-                  </p>
-                  <div className="flex justify-center items-center">
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      <CounterUp end={98} duration={5000} />
-                    </p>
-                    <p className="text-[#252B91] text-xl sm:text-2xl md:text-3xl font-bold counter-value">
-                      %
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<SecAbout/>
 
 
 {/* country */}

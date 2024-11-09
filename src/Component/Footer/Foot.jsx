@@ -4,9 +4,25 @@ import "../../App.css";
 import { Button} from "flowbite-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 function Foot() {
   return (
-    <Footer className="mt-20">
+<>
+<div className='border border-black mt-10 '>
+    <div className="flex justify-evenly items-center h-32">
+      <div>
+      <p className="poppins-semibold text-xl">Are You Looking For Visa CONSULTANCY Just Call Us</p>
+      <p className="poppins-semibold text-xl">+91 9896974863</p>
+      </div>
+      <Link to="/contact">
+      <button className="px-5 poppins-regular py-2 bg-[#4CAF50] hover:bg-[#303F9F] text-white rounded-[50px]">
+             Book Now
+            </button>
+      </Link>
+     
+    </div>
+   </div>
+<Footer className="">
       <div className="w-full mx-auto">
         <div className="grid grid-cols-1 gap-8 px-6 py-8 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 bg-[#303F9F]">
         <div className="flex flex-col items-start">
@@ -130,6 +146,9 @@ function Foot() {
         </div>
       </div>
     </Footer>
+</>
+
+    
   );
 }
 

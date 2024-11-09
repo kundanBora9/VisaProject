@@ -99,7 +99,7 @@
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-6xl text-center">
         <h1 className="poppins-semibold text-6xl">Contact Us</h1>
         <Breadcrumb aria-label="Default breadcrumb example" className="mt-3 text-[#4CAF50]">
-        <Breadcrumb.Item href="#" icon={HiHome}>
+        <Breadcrumb.Item href="/" icon={HiHome}>
           Home
         </Breadcrumb.Item>
         <Breadcrumb.Item href="#" className="text-[#4CAF50]">Contact</Breadcrumb.Item>
@@ -127,9 +127,13 @@
           <FontAwesomeIcon icon={faMapLocationDot} className="text-6xl text-[#303F9F]" />
         </div>
         <div className="ml-3">
-          <h5 className="poppins-semibold text-[#303F9F] text-xl">Location</h5>
+          <h5 className="poppins-semibold text-[#303F9F] text-xl">Delhi Address</h5>
           <p className='poppins-regular text-slate-500'>
-            123, First Floor, 123 St Roots Terrace, Los Angeles<br/> 90010 United States of America
+          1016,17,18 A block 10 th floor, Naurang House, KG Marg, Connaught Place, New Delhi, Delhi 110001
+          </p>
+          <h5 className="poppins-semibold text-[#303F9F] text-xl">Mumbai Address</h5>
+          <p className='poppins-regular text-slate-500'>
+          Off. No. 4, AWFIS SPACE SOLUTION ,No.801/802, 8th Floor, Tower-1, One International Center, Sanapati Bapat Marg, Mumbai - 400013
           </p>
         </div>
       </div>
@@ -142,11 +146,14 @@
             <h5 className="text-xl text-[#303F9F] poppins-medium uppercase mb-2">Quick Contact</h5>
             <div className='poppins-regular text-[#303F9F]'>
               <h6 className="mb-0 poppins-semibold">Phone:</h6>
-              <a href="tel:+01234567890" className="text-primary text-lg">+012 3456 7890</a>
+              <p className="text-lg">+91 9896974863</p>
+              <p className="text-lg">011 4601 6829</p>
+              <p className="text-lg">011 4708 2458</p>
             </div>
             <div className='poppins-regular text-[#303F9F]'>
               <h6 className="mb-0 poppins-semibold">Email:</h6>
-              <a href="mailto:travisa@example.com" className="text-primary text-lg">travisa@example.com</a>
+              <p className="text-lg">info@mvtsindia.com</p>
+              <p className="text-lg">md@mvtsindia.com</p>
             </div>
           </div>
         </div>
