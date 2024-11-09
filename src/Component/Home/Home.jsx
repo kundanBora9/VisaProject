@@ -44,7 +44,6 @@ import { faPlaneUp } from "@fortawesome/free-solid-svg-icons";
 import Client from './Client.jsx'
 import VisaCategory from '../VisaServices/visaCat.jsx'
 import SecAbout from './Secabout.jsx'
-import Micepng from '../../assets/mice.png'
 import Holiday from '../../assets/Holiday.png'
 
 
