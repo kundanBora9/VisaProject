@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function Foot() {
   return (
 <>
-<div className='border border-black mt-10 '>
+{/* <div className='border border-black mt-10 '>
     <div className="flex justify-evenly items-center h-32">
       <div>
       <p className="poppins-semibold text-xl">Are You Looking For Visa CONSULTANCY Just Call Us</p>
@@ -21,8 +21,8 @@ function Foot() {
       </Link>
      
     </div>
-   </div>
-<Footer className="">
+   </div> */}
+<Footer className="mt-5">
       <div className="w-full mx-auto">
         <div className="grid grid-cols-1 gap-8 px-6 py-8 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 bg-[#303F9F]">
         <div className="flex flex-col items-start">

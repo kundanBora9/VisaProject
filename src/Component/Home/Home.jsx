@@ -820,7 +820,7 @@ function Home() {
 
       {/* news latter */}
 
-    <section>
+    {/* <section>
       <div className="container mt-10">
           <div>
             <div className="flex justify-center items-center border border-black h-52">
@@ -832,7 +832,7 @@ function Home() {
             </div>
           </div>
       </div>
-    </section>
+    </section> */}
 
     </>
   );

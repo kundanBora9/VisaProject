@@ -80,7 +80,8 @@ function Header() {
       {/* Navbar */}
       <Navbar fluid rounded className="poppins-regular sticky top-0 z-10">
         <Navbar.Brand href="/">
-          <img src={logo} className="mr-3 h-14 bg-black" alt="" />
+          {/* <img src="" className="mr-3 h-14 bg-black" alt="" /> */}
+          <p>Any Time</p>
           {/* <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             Logo
           </span> */}
